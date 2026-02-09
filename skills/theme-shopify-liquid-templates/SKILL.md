@@ -100,11 +100,13 @@ For long or complex logic, use the `{% liquid %}` tag:
 - Always use `image_tag` filter
 - Use responsive `srcset` and sizes
 - Do NOT hardcode `<img>` tags
+- Use `<image_url>` to generate a URL for an image.
+- Always specify either a width or height parameter for `<image_url>`.
 
 ### Image Tag Syntax
 
 ```liquid
-{{ image | image_tag: widths: '360, 720, 1080', loading: 'lazy' }}
+{{ image | image_url: width: image.width | image_tag: widths: '360, 720, 1080', loading: 'lazy' }}
 ```
 
 ### Responsive Images
@@ -112,7 +114,7 @@ For long or complex logic, use the `{% liquid %}` tag:
 ```liquid
 {% assign image_widths = '360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2160' %}
 
-{{ product.featured_image | image_tag: 
+{{ product.featured_image | image_url: width: product.featured_image.width | image_tag: 
   widths: image_widths,
   sizes: '(min-width: 1200px) 50vw, 100vw',
   loading: 'lazy',

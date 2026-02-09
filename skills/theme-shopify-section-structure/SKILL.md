@@ -31,6 +31,8 @@ Each section must include its own stylesheet using:
 
 **Important**: Do NOT mix styles of multiple sections in one file. Each section has its own CSS file.
 
+**Exception**: above-the-fold sections (e.g., _header_, _announcement bar_) can use styles from global theme files (like `theme.css`) to load critical CSS.
+
 ### JavaScript Inclusion
 
 If a section needs JavaScript, include it separately:
@@ -106,13 +108,13 @@ Add a "Paddings" heading in the schema with these settings:
 Use the schema settings in your section CSS:
 
 ```css
-.section {
+.section-{{ section.id }}-padding {
   padding-top: {{ section.settings.padding_top }}px;
   padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 
 @media (max-width: 749px) {
-  .section {
+  .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top_mobile }}px;
     padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
   }
