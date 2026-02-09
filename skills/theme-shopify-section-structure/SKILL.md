@@ -1,5 +1,5 @@
 ---
-name: shopify-section-structure
+name: theme-shopify-section-structure
 description: Shopify theme section structure, file organization, and schema requirements. Use when creating or modifying Shopify theme sections.
 ---
 

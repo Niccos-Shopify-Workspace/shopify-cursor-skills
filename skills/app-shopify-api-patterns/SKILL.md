@@ -1,5 +1,5 @@
 ---
-name: shopify-app-api-patterns
+name: app-shopify-app-api-patterns
 description: Frontend-backend communication patterns in Shopify Remix apps. Use when adding pages that need backend data, creating data mutations, using loaders and actions, handling authenticated requests, or managing session and authentication in routes.
 ---
 

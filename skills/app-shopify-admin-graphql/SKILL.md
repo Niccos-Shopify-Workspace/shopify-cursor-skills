@@ -1,5 +1,5 @@
 ---
-name: shopify-admin-graphql
+name: app-shopify-admin-graphql
 description: Execute Shopify Admin API calls via GraphQL in Shopify Remix apps. Use when querying or mutating Shopify data (customers, orders, products, shop, segments, subscriptions), when writing GraphQL for the Admin API, or when handling throttling and retries.
 ---
 

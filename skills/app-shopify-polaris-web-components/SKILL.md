@@ -1,5 +1,5 @@
 ---
-name: shopify-polaris-web-components
+name: app-shopify-polaris-web-components
 description: Use Shopify Polaris Web Components (s-* custom elements) for App Home UI. Use when building App Home surfaces (not embedded apps), designing UI with s-page, s-section, s-stack, s-box, s-button, and other s-* components. Do not use @shopify/polaris React - App Home requires Web Components.
 ---
 

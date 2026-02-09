@@ -1,5 +1,5 @@
 ---
-name: shopify-liquid-templates
+name: theme-shopify-liquid-templates
 description: Liquid template best practices for Shopify themes - snippets, logic, image handling, and SVG usage. Use when writing or modifying Liquid templates in Shopify themes.
 ---
 

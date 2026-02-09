@@ -1,5 +1,5 @@
 ---
-name: shopify-built-for-shopify
+name: app-shopify-built-for-shopify
 description: Enforces Built for Shopify (BFS) quality standards during Shopify app development. Use when building, reviewing, or auditing Shopify apps for BFS compliance, or when the user mentions Built for Shopify, BFS, app quality, or app store requirements.
 ---
 

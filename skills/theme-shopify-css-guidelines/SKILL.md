@@ -1,5 +1,5 @@
 ---
-name: shopify-css-guidelines
+name: theme-shopify-css-guidelines
 description: CSS naming conventions (BEM), nesting rules, and encapsulation guidelines for Shopify themes. Use when writing CSS for Shopify theme sections.
 ---
 

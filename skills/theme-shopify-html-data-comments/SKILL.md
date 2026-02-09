@@ -1,5 +1,5 @@
 ---
-name: shopify-html-data-comments
+name: theme-shopify-html-data-comments
 description: HTML structure, data attributes, and commenting guidelines for Shopify themes. Use when structuring HTML markup and adding comments to Shopify theme code.
 ---
 

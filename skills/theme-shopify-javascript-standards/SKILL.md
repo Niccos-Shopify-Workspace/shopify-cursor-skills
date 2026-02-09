@@ -1,5 +1,5 @@
 ---
-name: shopify-javascript-standards
+name: theme-shopify-javascript-standards
 description: JavaScript standards for Shopify themes - custom elements, file structure, and best practices. Use when writing JavaScript for Shopify theme sections.
 ---
 
