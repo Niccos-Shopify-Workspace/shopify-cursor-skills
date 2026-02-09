@@ -31,7 +31,7 @@ Each section must include its own stylesheet using:
 
 **Important**: Do NOT mix styles of multiple sections in one file. Each section has its own CSS file.
 
-**Exception**: above-the-fold sections (e.g., header, announcement bar) can use styles from global theme files (like theme.css) to load critical CSS.
+**Exception**: above-the-fold sections (e.g., _header_, _announcement bar_) can use styles from global theme files (like `theme.css`) to load critical CSS.
 
 ### JavaScript Inclusion
 
