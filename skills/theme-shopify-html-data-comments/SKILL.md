@@ -120,13 +120,16 @@ class ImageGallery extends HTMLElement {
 Always include usage comments in snippets:
 
 ```liquid
-{%- comment -%}
-Usage:
-{% render 'product-card', 
-  product: product, 
-  show_vendor: true, 
-  show_price: true %}
-{%- endcomment -%}
+{% comment %}
+  Renders product card snippet.
+  Accepts:
+  - product: {Object} product object.
+  - show_vendor: {Boolean} whether to show vendor (optional).
+  - show_price: {Boolean} whether to show price (optional).
+
+  Usage:
+  {% render 'product-card', product: product, show_vendor: true, show_price: true %}
+{% endcomment %}
 ```
 
 ### HTML Comments
