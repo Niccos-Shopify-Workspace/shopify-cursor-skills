@@ -25,10 +25,15 @@ Best practices for Liquid templates, snippets, logic flow, image handling, and S
 ### Snippet Structure
 
 ```liquid
-{%- comment -%}
-Usage:
-{% render 'snippet-name', param: value, another_param: value %}
-{%- endcomment -%}
+{% comment %}
+  Renders snippet description.
+  Accepts:
+  - param: {Object} description.
+  - another_param: {String} description (optional).
+
+  Usage:
+  {% render 'snippet-name', param: value, another_param: value %}
+{% endcomment %}
 
 <div class="snippet-name">
   {{ param }}
@@ -183,10 +188,15 @@ Reference these official Shopify resources:
 ### Product Card Snippet
 
 ```liquid
-{%- comment -%}
-Usage:
-{% render 'product-card', product: product, show_vendor: false %}
-{%- endcomment -%}
+{% comment %}
+  Renders product card snippet.
+  Accepts:
+  - product: {Object} product object.
+  - show_vendor: {Boolean} whether to show vendor (optional).
+
+  Usage:
+  {% render 'product-card', product: product, show_vendor: false %}
+{% endcomment %}
 
 <div class="product-card">
   <a href="{{ product.url }}">

@@ -121,6 +121,31 @@ Use the schema settings in your section CSS:
 }
 ```
 
+## Block Attributes
+
+Every block **must** include `{{ block.shopify_attributes }}` on its root element:
+
+```liquid
+{%- for block in section.blocks -%}
+  <div class="slide" {{ block.shopify_attributes }}>
+    {%- comment -%} Block content {%- endcomment -%}
+  </div>
+{%- endfor -%}
+```
+
+## Theme Editor Events
+
+| Event                      | Description                     |
+| -------------------------- | ------------------------------- |
+| `shopify:section:load`     | Section added or re-rendered    |
+| `shopify:section:unload`   | Section removed from page       |
+| `shopify:section:select`   | User selected section in editor |
+| `shopify:section:deselect` | User deselected section         |
+| `shopify:block:select`     | User selected block             |
+| `shopify:block:deselect`   | User deselected block           |
+
+Listen on `document` when section/block needs to react to theme editor selection (e.g. re-init JS).
+
 ## Shopify Theme Documentation
 
 Reference these official Shopify resources:
@@ -149,3 +174,5 @@ assets/
 4. **Add schema** with required padding settings
 5. **Add at least one preset** to the schema
 6. **Keep files separate** - never mix multiple sections' styles in one CSS file
+7. **Output `{{ block.shopify_attributes }}`** on the root element of every block when using `section.blocks`
+8. **Use theme editor events** (`shopify:section:*`, `shopify:block:*`) on `document` when JS must react to section/block selection
