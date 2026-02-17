@@ -303,6 +303,19 @@ class ProductCard extends HTMLElement {
 }
 ```
 
+### Styling
+
+- **Never** set styles directly in JavaScript (`element.style.display = 'none'`)
+- **Always** add/remove CSS classes (`element.classList.add('is-open')`, `classList.remove()`)
+- Keep visual state in CSS; JS only toggles classes
+### Inter-component Communication
+
+- Use **CustomEvent** when components need to talk to each other or to parent/sections
+- Dispatch from the component; listen on `document` or a common ancestor if needed
+
+```javascript
+this.dispatchEvent(new CustomEvent('cart:updated', { bubbles: true, detail: { count: 1 } }));
+```
 ## Shopify Theme Documentation
 
 Reference these official Shopify resources:
@@ -333,7 +346,7 @@ Reference these official Shopify resources:
 ```
 
 ### JavaScript File
-
+All interactive components **must** use Web Components wrapped in IIFE:
 ```javascript
 (()=>{
   if (!customElements.get('product-card')) {

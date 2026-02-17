@@ -226,6 +226,13 @@ Include proper accessibility attributes:
 </button>
 ```
 
+### Section Structure
+
+- Each component or section must be **maximally encapsulated**
+- **Never** inline scripts or styles inside HTML tags
+- Prefer **Shopify Section Rendering API** for content updates over AJAX API with JavaScript HTML building
+
+
 ## Shopify Theme Documentation
 
 Reference these official Shopify resources:
